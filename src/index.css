@@ -1,13 +1,66 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+html, body { overflow-x: hidden; }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+* { margin: 0; font-family: "Montserrat"; color: #333; }
+
+h1, h2, h3, h4, h5, h6, span { word-break: break-word; -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
+
+.container { max-width: 1180px; display: -webkit-box; display: -ms-flexbox; display: flex; margin-right: auto; margin-left: auto; position: relative; padding: 10px; }
+
+@media (max-width: 767px) { .container { max-width: 767px; } }
+
+/* Navbar */
+nav.navbar { background-color: #171010; }
+
+nav.navbar .navbar-section { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; position: relative; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; height: 70px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; }
+
+nav.navbar .navbar-section .links { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; gap: 20px; }
+
+nav.navbar .navbar-section .links a { text-decoration: none; font-weight: 500; font-size: 14px; color: white; }
+
+nav.navbar .navbar-section .links a:hover { color: #FF4848; }
+
+.banner { background-color: #171010; height: 770px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+.banner .container { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; gap: 20px; }
+
+.banner .container .banner-title { width: 100%; }
+
+.banner .container .banner-title h1 { color: white; width: 70%; font-weight: 700; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 56px; letter-spacing: 0.56px; }
+
+@media (max-width: 1024px) { .banner .container .banner-title h1 { width: 100%; font-size: 38px; } }
+
+.banner .container span { width: 100%; color: white; font-weight: 400; }
+
+.marquee-email { background-color: #171010; height: 100px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+.marquee-email .container { max-width: 100%; }
+
+.marquee-email .container marquee.email ul { list-style: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; gap: 20px; }
+
+.marquee-email .container marquee.email ul li { font-size: 56px; font-style: normal; font-weight: 500; line-height: normal; letter-spacing: 0.56px; display: -webkit-box; display: -ms-flexbox; display: flex; gap: 20px; color: white; }
+
+.marquee-email .container marquee.email ul li::before { content: "-"; color: #FF4848; }
+
+.content .container { padding-top: 96px; padding-bottom: 96px; }
+
+@media (max-width: 968px) { .content .container { padding-bottom: 50px; padding-top: 50px; } }
+
+.content .container .col-1 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; position: relative; gap: 24px; width: 100%; }
+
+.content .container .col-1 .portfolios { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; gap: 12px; }
+
+.content .container .col-1 .portfolios h2 { font-size: 28px; }
+
+.content .container .col-1 .portfolios .portfolio-card { display: -ms-grid; display: grid; -ms-grid-columns: (1fr)[4]; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+
+@media (max-width: 767px) { .content .container .col-1 .portfolios .portfolio-card { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
+
+@media (max-width: 968px) { .content .container .col-1 .portfolios .portfolio-card { -ms-grid-columns: (1fr)[2] !important; grid-template-columns: repeat(2, 1fr) !important; } }
+
+.content .container .col-1 .portfolios .portfolio-card .portfolio-preview { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin-bottom: 20px; }
+
+.content .container .col-1 .portfolios .portfolio-card .portfolio-preview h3 { font-size: 18px; color: #FF4848; font-weight: 700; }
+
+.content .container .col-1 .portfolios .portfolio-card .portfolio-preview p { color: #303030; }
+/*# sourceMappingURL=index.css.map */
